@@ -2,10 +2,8 @@
 
 var fs = require('fs')
 var test = require('tape')
-var dirname = require('path').dirname
 var build = require('../')
 var TmpDir = require('quick-tmp')('compile-module-map')
-var spawn = require('child_process').spawn
 
 test('will create clone of structure with replacements applied', function(t) {
   var tmpdir = TmpDir()
